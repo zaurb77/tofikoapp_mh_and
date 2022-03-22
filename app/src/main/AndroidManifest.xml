@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.angaihouse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/SplashScreenTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateHidden"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        <activity android:name=".activity.StoreDetailActivity"></activity>
+        <activity android:name=".activity.SelectRestaurantActivity" />
+        <activity android:name=".activity.RestaurantListActivity" />
+        <activity android:name=".activity.BookTableResultActivity" />
+        <activity android:name=".activity.TableBookingActivity" />
+        <activity
+            android:name=".activity.newmodel.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.newmodel.NoInternetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.newmodel.StoreListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.DetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".activity.newmodel.MapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.OrderHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.ContactSupportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.MyOfferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.AboutUs_NewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.ShareAndEarnActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.CartNewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.MenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.OrderMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.newmodel.SideMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.newmodel.Home_New"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.SetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CodActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BrowserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.ThankyouActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.AddNewCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.PaymentInfoScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.AcceptTermsAndConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddAddressTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.AddAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CookiesPolicy"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.PrivacyPolicyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.TermsAndConditionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.PushNotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.CompanyInformation"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.DeliveryInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RedScreenTheme" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mangal.page.link"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mangal.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".utils.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider179520530243243"
+            android:exported="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/providers_paths" />
+        </provider>
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

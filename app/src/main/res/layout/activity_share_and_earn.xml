@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.angaihouse.activity.newmodel.ShareAndEarnActivity">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/colorLightGreen"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:src="@drawable/back"
+                    android:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_mangalhouse"
+                    android:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/back"
+                    android:tint="@color/white"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/logo_mangal" />
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/mangalTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/colorLightGreen"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/tvInviteFriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/tvShareYourCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorLightGreen"
+                android:textSize="@dimen/_13sdp" />
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_145sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/round_green_border"
+                android:orientation="horizontal">
+
+
+                <com.angaihouse.controls.CEditText
+                    android:id="@+id/edtCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorLightGreen" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/right_round_bg"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/share_ic" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gray_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.angaihouse.controls.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:visibility="gone"
+                            android:text="Share this app in your fb and get 20.00 Mangal and\nShare this app in your insta and get 30.00 Mangal and\nShare this app in your linkdin and get 20.00 Mangal and\nShare this app in your whatsapp and get 20.00 Mangal and\nShare this app in your telegram and get 20.00 Mangal and\n"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.facebook.share.widget.ShareButton
+                                android:id="@+id/fb_share_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"/>
+
+                            <ImageView
+                                android:id="@+id/fbShare"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:src="@drawable/fb_color"/>
+
+                            <ImageView
+                                android:id="@+id/instagram"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:src="@drawable/insta_color"/>
+
+                            <ImageView
+                                android:id="@+id/linkdin"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:src="@drawable/linkdin_color"/>
+
+                            <ImageView
+                                android:id="@+id/whatsapp"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:src="@drawable/whatsapp_color"/>
+
+                            <ImageView
+                                android:id="@+id/teli"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_margin="@dimen/_10sdp"
+                                android:src="@drawable/teligram_color"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageInstaShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+
+</layout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/_2sdp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/llFrame"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/catImage"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/imgSelect"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:visibility="gone"
+                android:src="@drawable/select" />
+
+        </FrameLayout>
+
+        <com.angaihouse.controls.CTextView
+            android:id="@+id/catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lines="1"
+            android:ellipsize="end"
+            tools:text="abcfsfajlsad fkdsgf"
+            android:textSize="@dimen/_9sdp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+</layout>

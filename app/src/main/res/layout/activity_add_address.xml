@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.AddAddressActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/colorLightGreen">
+
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/back"
+                    android:tint="@color/white" />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo_mangalhouse"
+                    android:tint="@color/white" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/add"
+                    android:visibility="invisible"
+                    android:tint="@color/white" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_40sdp">
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/addressTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorLightGreen"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/CTextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="invisible" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAddressList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+            </LinearLayout>
+
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:layout_gravity="center"/>
+
+
+            <ImageView
+                android:id="@+id/addAddress"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/add"
+                android:layout_margin="@dimen/_15sdp"
+                android:background="@drawable/round_green_solid"
+                android:layout_gravity="bottom|end"
+                android:tint="@color/white" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/colorLightGreen"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:visibility="invisible"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/right_arrow"/>
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/continueBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:text="CONTINUE"
+                android:visibility="visible"
+               />
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:tint="@color/white"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/right_arrow"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Mangal House</string>
+    <string name="places_key">AIzaSyDnwVsJT81wVvk3ER1kbjebezFzBTzu4i4</string>
+    <string name="google_maps_key">AIzaSyDukLKW9uJFRdiYGED6Om6jtTP50y2RfX0</string>
+    <string name="terms">terms</string>
+    <string name="policy">policy</string>
+    <string name="cookie">cookie</string>
+    <string name="ok">ok</string>
+    <string name="facebook_app_id">179520530243243</string>
+
+
+</resources>

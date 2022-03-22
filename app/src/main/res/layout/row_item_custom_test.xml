@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/llAddItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <com.angaihouse.controls.CTextView
+            android:id="@+id/itemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/_11sdp"
+            tools:text="Add on name" />
+
+        <com.angaihouse.controls.CTextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:textColor="@color/colorLightGreen"
+            android:textSize="@dimen/_12sdp"
+            tools:text="$00" />
+
+
+        <ImageView
+            android:id="@+id/select"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:tint="@color/colorLightGreen"
+            android:src="@drawable/empty" />
+
+
+    </LinearLayout>
+</layout>

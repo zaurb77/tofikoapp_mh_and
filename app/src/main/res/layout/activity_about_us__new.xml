@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/colorLightGreen"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/back"
+                android:tint="@color/white" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_weight="1"
+                android:src="@drawable/logo_mangalhouse"
+                android:tint="@color/white" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/back"
+                android:tint="@color/white"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#212221">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ab_banner" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="#bc9952" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ab_one" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Carni di qualità certificata"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Razza piemontese"
+                    android:textColor="#bc9952"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/title1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="La carne dei nostri hamburger e delle nostre bistecche è 100% Bovino Piemontese Fassone di primissima qualità.
+ Anche la carne di suino è ottenuta in allevamenti piemontesi che promuovono il patrimonio agroalimentare regionale con la massima cura e rispetto di animali ed ambiente."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="#bc9952" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/verdure" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Verdure locali"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="filiera corta"
+                    android:textColor="#bc9952"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/title2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Gli ortaggi che arricchiscono le nostre ricette provengono da produttori della zona, nel pieno rispetto della stagionalità dei prodotti e del lavoro dei contadini.
+Possiamo così assicurarti genuinità, freschezza e ricchezza nutritiva... a tutto gusto!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="#bc9952" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ad_three" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Farine bio e lievito madre"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Impasto d'eccellenza"
+                    android:textColor="#bc9952"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/title3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Farina biologica: rispetta l'ecosistema agricolo Semintegrale: la giusta via di mezzo tra lavorabilità e ricchezza nutritiva.Macinazione a pietra: conserva le proprietà nutrizionali contenute nel germe di grano.Lievito Madre: un impasto a lunga lievitazione si digerisce meglio… è più sano ed è più buono!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="#bc9952" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/carbone" />
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Cottura su carbone vegetale"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Sapore inimitabile"
+                    android:textColor="#bc9952"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/title4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Il nostro metodo di cottura su vero carbone vegetale di alta qualità, un metodo antico e naturale, conferisce un carattere davvero unico ai nostri piatti: un sapore intenso, aromatico e veramente inimitabile."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="#bc9952" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/salse" />
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Condimenti genuini"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Salse fatte in casa"
+                    android:textColor="#bc9952"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Le salse sono il fiore all'occhiello dei nostri piatti, perché sono buone e genuine: Maionese, guacamole, salsa BBQ, salsa Mangal e tutte le altre salse sono preparate ogni giorno direttamente da noi con materie prime fresche e naturali.\nProva la differenza!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="#bc9952" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/formaggi" />
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Sapori gourmet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="formaggi slow food"
+                    android:textColor="#bc9952"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Per le nostre ricette scegliamo formaggi che siano locali, provenienti da mucche nutrite con foraggi coltivati all'interno delle aziende agricole; sostenibili perché prediligiamo chi utilizza concimi naturali per i campi nei quali pascolano; buoni, perché ci piacciono le cose tipiche, gustose, dallo spirito slow food."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="#bc9952" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bevande" />
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Very importand drinks"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="bevande premium"
+                    android:textColor="#bc9952"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Abbiamo pensato di abbinare ai nostri piatti eccellenze del territorio piemontese, per esaltare i sapori e offrire un'esperienza completa al vostro palato.\nPer questo le nostre birre e i nostri vini sono stati scelti con cura tra specialità premiate, prestigiose, che parlano ad ogni sorso della passione per le cose buone che accomuna noi e i nostri preziosi clienti"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:background="#bc9952" />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ambiente" />
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Rispetto per l'ambiente"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Eco friendly"
+                    android:textColor="#bc9952"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Abbiamo scelto materie prime che nascono da politiche di produzione rispettose per la terra e gli animali, così possiamo offrire sempre un prodotto genuino e sostenibile.\nAnche gli incarti e gli imballaggi utilizzati per i nostri prodotti sono eco-compatibili, biodegradabili e compostabili"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

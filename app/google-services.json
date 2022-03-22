@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "669289926430",
+    "project_id": "mangal-house-customer",
+    "storage_bucket": "mangal-house-customer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669289926430:android:0ae39c0e26f618ec50c30f",
+        "android_client_info": {
+          "package_name": "com.mangalhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669289926430-patv8mc6lcc3u9ojcj7ol20ssv47hvea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtdjTIFmJSXvbzLAN8Rxr3jtq4yfDCBRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669289926430-patv8mc6lcc3u9ojcj7ol20ssv47hvea.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "669289926430-1te7ub861054h80p15htk2bmhddme91r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jk.mangal",
+                "app_store_id": "1493326708"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

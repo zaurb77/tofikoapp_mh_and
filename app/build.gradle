@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.mangalhouse"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 16
+        versionName "2.4"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.android.support:design:29.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.3.0'
+    implementation 'com.google.firebase:firebase-perf:20.0.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'me.relex:circleindicator:2.1.0@aar'
+    implementation 'com.github.florent37:viewanimator:1.1.0'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation 'com.github.yesterselga:country-picker-android:1.0'
+    implementation 'com.google.android.gms:play-services-places:16.1.0'
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-config:19.0.3'
+    implementation 'com.google.firebase:firebase-messaging:20.0.1'
+    implementation 'com.stripe:stripe-android:6.1.2'
+    implementation 'com.seatgeek:placesautocomplete:0.3-SNAPSHOT'
+    implementation 'com.google.android.gms:play-services-places:latest_version'
+    implementation 'com.github.pinball83:masked-edittext:1.0.4'
+    implementation 'org.aviran.cookiebar2:cookiebar2:1.1.3'
+    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+    implementation 'com.google.firebase:firebase-dynamic-links'
+    implementation 'com.borjabravo:readmoretextview:2.1.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.whiteelephant:monthandyearpicker:1.3.0'
+    implementation 'com.facebook.android:facebook-share:[5,6)'
+    //App update
+    implementation 'com.google.android.play:core:1.6.4'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:26.5.0')
+    // Declare the dependencies for the Dynamic Links and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-dynamic-links'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    //Custom Calender
+    implementation 'com.github.prolificinteractive:material-calendarview:1.5.0'
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'

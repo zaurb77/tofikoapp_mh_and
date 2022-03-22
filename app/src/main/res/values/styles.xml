@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#282626</item>
+        <item name="colorPrimaryDark">#282626</item>
+        <item name="colorAccent">#282626</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowAnimationStyle">@style/MyCustomActivityAnimation</item>
+    </style>
+
+
+    <style name="RedScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+       <!-- <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>-->
+
+        <item name="colorPrimary">@color/colorLightGreen</item>
+        <item name="colorPrimaryDark">@color/colorLightGreen</item>
+        <item name="colorAccent">@color/colorLightGreen</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowAnimationStyle">@style/MyCustomActivityAnimation</item>
+    </style>
+
+
+    <style name="CustomDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/lightGrey</item>
+        <item name="colorControlActivated">@color/colorLightGreen</item>
+    </style>
+
+
+    <style name="MyCustomActivityAnimation"
+        parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">
+            @anim/side_in_right</item>
+        <item name="android:activityOpenExitAnimation">
+            @anim/side_out_left</item>
+        <item name="android:activityCloseEnterAnimation">
+            @anim/side_in_left</item>
+        <item name="android:activityCloseExitAnimation">
+            @anim/side_out_right</item>
+    </style>
+
+</resources>

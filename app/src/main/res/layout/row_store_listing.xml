@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_3sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/bottom_grey_line"
+        android:orientation="horizontal">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/storeImage"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="match_parent"
+            app:riv_corner_radius="@dimen/_3sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/storeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"/>
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/storeDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_11sdp"/>
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/storePhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/_10sdp"/>
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/storeDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/_10sdp"/>
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/closeOpenTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGrey"
+                android:textSize="@dimen/_10sdp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

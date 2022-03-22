@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|top">
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/pointDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_margin="@dimen/_15sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/llCod"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_15sdp"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/corner_border_share_cod"
+                android:orientation="vertical">
+
+
+                <com.angaihouse.controls.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Share your code"/>
+
+
+                <com.angaihouse.controls.CTextView
+                    android:id="@+id/referralCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    tools:text="ZH4099"/>
+
+
+            </LinearLayout>
+
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/inviteFriends"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:padding="@dimen/_7sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/corner_bg_black"
+                android:visibility="gone"/>
+
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/textDetailOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                tools:text="Share this app in your fb and insta will get\n300 Mangals"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/llShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/facebookShare"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@drawable/facebook_black"/>
+
+                <ImageView
+                    android:id="@+id/instagramShare"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:src="@drawable/instagram_black"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

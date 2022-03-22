@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/bottom_grey_line"
+        android:orientation="vertical">
+
+        <com.angaihouse.controls.CTextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorPrimaryDark"
+            tools:text="Monday"/>
+
+        <com.angaihouse.controls.CTextView
+            android:id="@+id/openTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:text="10:10 PM to 11:00 AM"/>
+
+        <com.angaihouse.controls.CTextView
+            android:id="@+id/closeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:text="10:10 PM to 11:00 AM"/>
+
+    </LinearLayout>
+</layout>

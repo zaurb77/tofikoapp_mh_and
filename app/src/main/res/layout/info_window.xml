@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_180sdp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.angaihouse.controls.CTextView
+        android:id="@+id/infoTitle"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        android:padding="@dimen/_3sdp"
+        android:gravity="center"
+        android:lines="1"
+        android:ellipsize="end"
+        tools:text="IMPOSSIBLE CALCOLARELA DISTANZA"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/descriptionMapInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="end"
+                tools:text="TORINO CIGNA(#123456)"
+                android:textColor="@color/black"
+                android:layout_gravity="end"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/_7sdp"/>
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Via Cigana 17 ioi52 TORINO sfafsdfsdfdsfsdfdsf gfgfdg fg fg fg fgf gfg gdf gf"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/lightGRAY"
+                android:layout_gravity="end"
+                android:textSize="@dimen/_7sdp"/>
+
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/tvCelluar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:text="Numero dil telefono:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_7sdp"
+                android:layout_gravity="end"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:text="1234567890"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/lightGRAY"
+                android:textSize="@dimen/_7sdp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@color/lightGRAY"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/tvDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:text="LUNEDI-DOMENICA"
+                android:textColor="@color/black"
+                android:layout_gravity="start"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/_7sdp"/>
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:text="12:00 - 15:44"
+                android:textColor="@color/black"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_7sdp"/>
+
+            <com.angaihouse.controls.CTextView
+                android:id="@+id/endTIme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:text="18:00 - 22:44"
+                android:textColor="@color/black"
+                android:layout_gravity="start"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_7sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.angaihouse.controls.CTextView
+        android:id="@+id/btnOpen"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        android:textStyle="bold"
+        android:text="RITIRA QUI"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:textSize="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/white"/>
+
+
+
+</LinearLayout>
